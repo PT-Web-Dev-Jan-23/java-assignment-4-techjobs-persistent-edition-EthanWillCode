@@ -14,7 +14,7 @@ public class Employer extends AbstractEntity {
     @Size(min = 3, max = 100, message = "Please enter a valid name.")
     private String location;
     @OneToMany
-    @JoinColumn(name = "employer_Id")
+    @JoinColumn(name = "employer_id")
     private List<Job> jobs = new ArrayList<>();
 
     public Employer() {}
