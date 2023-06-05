@@ -22,13 +22,10 @@ public class ListController {
 
     @Autowired
     private JobRepository jobRepository;
-
     @Autowired
     private EmployerRepository employerRepository;
-
     @Autowired
     private SkillRepository skillRepository;
-
     static HashMap<String, String> columnChoices = new HashMap<>();
 
     public ListController () {
