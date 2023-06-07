@@ -16,7 +16,6 @@ public class Skill extends AbstractEntity {
     private List<Job> jobs = new ArrayList<>();
 
     @NotBlank
-    @Size(min = 3, max = 100, message = "Please enter a valid name.")
     private String description;
     public Skill() {}
     public String getDescription() {
